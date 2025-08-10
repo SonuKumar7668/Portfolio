@@ -4,9 +4,27 @@
   @apply mx-5 text-[#1C2321]
 }
 
+.active-link{
+  @apply text-gray-400
+}
+
 .home-box{
   @apply h-[100vh] pt-15
 }
+
+.skills-div{
+  @apply grid grid-cols-3 gap-8 pl-10 mx-[15vw]
+}
+
+.Skills-heading{
+  @apply text-4xl font-bold text-gray-900 dark:text-gray-200 text-center
+}
+
+.skills-desc{
+  @apply text-center text-gray-700 dark:text-gray-200 mb-12
+}
+
+
 
 .title {
   font-family: "Oswald", sans-serif;

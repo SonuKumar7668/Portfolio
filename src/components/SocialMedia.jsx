@@ -52,9 +52,9 @@ const StyledWrapper = styled.div`
     background-color: #d62976;
     transition-duration: .3s;
   }
-  /* twitter*/
+  /* Email*/
   .containerTwo:hover {
-    background-color: #00acee;
+    background-color: #EE6352;
     transition-duration: .3s;
   }
   /* linkdin*/

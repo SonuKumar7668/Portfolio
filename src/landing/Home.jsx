@@ -1,6 +1,6 @@
 import React from 'react'
-import SocialMedia from "./SocialMedia"
-import Button from './Button';
+import SocialMedia from "../components/SocialMedia"
+import Button from '../components/Button';
 function Home() {
     return ( 
         <div className='flex justify-between'>
@@ -15,7 +15,7 @@ function Home() {
             </div>
             <div className='bg-[#DCEDFF] w-[40vw] flex justify-center home-box'>
                 <div className=' w-[60vh] h-auto flex flex-col items-center  mt-10'>
-                    <img className=' rounded-[100%] grayscale shadow-2xl hover:grayscale-0 hover:scale-105 transition duration-500 ease-in-out' src="../public/profile.jpg" alt='...self'/>
+                    <img className=' rounded-[100%] grayscale shadow-2xl hover:grayscale-0 hover:scale-105 transition duration-500 ease-in-out' src="../profile.jpg" alt='...self'/>
                     <SocialMedia/>
                 </div>
             </div>
