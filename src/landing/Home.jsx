@@ -1,6 +1,7 @@
 import React from 'react'
 import SocialMedia from "../components/SocialMedia"
 import Button from '../components/Button';
+import { Link } from 'react-router';
 function Home() {
     return ( 
         <div className='flex justify-between'>
@@ -9,7 +10,8 @@ function Home() {
                     <p className='m-0 '>WEB</p>
                     <p className='m-0'>DEVELOPER</p>
                     <p className="mt-4 text-2xl text-gray-200">Learning, building, and eager to solve real-world problems.</p>
-                    <Button/>
+                    <Link to="/about"><Button/></Link>
+                    
                 </div>
                 
             </div>
