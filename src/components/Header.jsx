@@ -15,9 +15,9 @@ function Header() {
             </div>
             <div className=' mx-5 right-0 transition-all duration-300'>
                 <Link className={`linkStyle ${isHomePage ? activeLink : ``}`} to="/" > HOME </Link>
-                <Link className={`linkStyle ${location.pathname === "/skills" ? activeLink : ``}`} to="/skills" onClick={(()=>handleClicks(1))} > SKILLS </Link>
-                <Link className={`linkStyle ${location.pathname === "/about" ? activeLink : ``}`} to="/about" onClick={(()=>handleClicks(2))} > ABOUT </Link>
-                <Link className={`linkStyle ${location.pathname === "/projects" ? activeLink : ``}`} to="/projects" onClick={(()=>handleClicks(3))} > PROJECTS </Link>
+                <Link className={`linkStyle ${location.pathname === "/skills" ? activeLink : ``}`} to="/skills"  > SKILLS </Link>
+                <Link className={`linkStyle ${location.pathname === "/about" ? activeLink : ``}`} to="/about"  > ABOUT </Link>
+                <Link className={`linkStyle ${location.pathname === "/projects" ? activeLink : ``}`} to="/projects" > PROJECTS </Link>
             </div>
         </header>
      );
