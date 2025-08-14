@@ -5,7 +5,7 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import ProjectPreview from './ProjectPreview';
 function ProjectCard({ title, desc, skills, link, github }) {
     return (
-        <div className='flex mx-[10vw] bg-[#C2DFFF] p-5 rounded-xl my-5'>
+        <div className='flex mx-[10vw] bg-[#C2DFFF] p-5 rounded-xl my-5 shadow-2xl' >
             <div className='w-[50%]'>
                 <ProjectPreview url={link} />
             </div>
@@ -14,9 +14,9 @@ function ProjectCard({ title, desc, skills, link, github }) {
                 <h1 className='text-2xl'>{title}</h1>
                 <div className='flex my-10'>
                     <span className='font-bold'>Skills: </span>
-                    {skills.map((skill) => {
+                    {skills.map((skill,index) => {
                         return (
-                            <span className='bg-green-300 py-0.5 px-2 rounded-xl mx-1'>{skill}</span>
+                            <span className='bg-green-300 py-0.5 px-2 rounded-xl mx-1' key={index}>{skill}</span>
                         );
                     })}
                 </div>

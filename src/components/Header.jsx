@@ -1,24 +1,23 @@
 import React from 'react';
-import {useState} from 'react'
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 function Header() {
-    let [handleClick,setHandleClick]=useState(0);
-
-    const handleClicks=(el)=>{
-        setHandleClick(el);
-    }
+    const location = useLocation();
+    const isHomePage = location.pathname === "/";
+    //const headerStyle = {isHomePage ? "flex fixed justify-between w-[100%]  py-5" : 'flex fixed justify-between w-[100%]  py-5'}
     let activeLink = "active-link";
     
     return ( 
-        <header className='flex fixed justify-between w-[100%]  py-5'>
-            <div className={handleClick !== 0 ? `text-black`: `text-white`}>
+        <header className={isHomePage ? "flex fixed justify-between w-[100%]  py-5" : 'flex bg-[#DCEDFF] z-10 fixed shadow-md justify-between w-[100%]  py-5'}>
+            <div className={isHomePage ? `text-white`: `text-black`}>
+                <Link to="/" >
                 <h1 className='title text-2xl mx-5 font-'>SONU KUMAR</h1>   
+                </Link>
             </div>
-            <div className=' mx-5 right-0'>
-                <Link className={`linkStyle ${handleClick === 0 ? activeLink : ``}`} onClick={(()=>handleClicks(0))} to="/" > HOME </Link>
-                <Link className={`linkStyle ${handleClick === 1 ? activeLink : ``}`} to="/skills" onClick={(()=>handleClicks(1))} > SKILLS </Link>
-                <Link className={`linkStyle ${handleClick === 2 ? activeLink : ``}`} to="/about" onClick={(()=>handleClicks(2))} > ABOUT </Link>
-                <Link className={`linkStyle ${handleClick === 3 ? activeLink : ``}`} to="/projects" onClick={(()=>handleClicks(3))} > PROJECTS </Link>
+            <div className=' mx-5 right-0 transition-all duration-300'>
+                <Link className={`linkStyle ${isHomePage ? activeLink : ``}`} to="/" > HOME </Link>
+                <Link className={`linkStyle ${location.pathname === "/skills" ? activeLink : ``}`} to="/skills" onClick={(()=>handleClicks(1))} > SKILLS </Link>
+                <Link className={`linkStyle ${location.pathname === "/about" ? activeLink : ``}`} to="/about" onClick={(()=>handleClicks(2))} > ABOUT </Link>
+                <Link className={`linkStyle ${location.pathname === "/projects" ? activeLink : ``}`} to="/projects" onClick={(()=>handleClicks(3))} > PROJECTS </Link>
             </div>
         </header>
      );
