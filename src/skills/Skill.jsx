@@ -1,6 +1,6 @@
 import React from 'react'
 import { frameworks, languages, databases } from "../Data/skillData"
-import SkillsCard from './skillsCard';
+import SkillsCard from './SkillsCard';
 
 function Skill() {
     return (
