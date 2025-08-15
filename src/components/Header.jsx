@@ -21,14 +21,6 @@ function Header() {
                     <h1 className="title text-2xl mx-5">SONU KUMAR</h1>
                 </Link>
             </div>
-<<<<<<< HEAD
-            <div className=' mx-5 right-0 transition-all duration-300'>
-                <Link className={`linkStyle ${isHomePage ? activeLink : ``}`} to="/" > HOME </Link>
-                <Link className={`linkStyle ${location.pathname === "/skills" ? activeLink : ``}`} to="/skills"  > SKILLS </Link>
-                <Link className={`linkStyle ${location.pathname === "/about" ? activeLink : ``}`} to="/about"  > ABOUT </Link>
-                <Link className={`linkStyle ${location.pathname === "/projects" ? activeLink : ``}`} to="/projects" > PROJECTS </Link>
-=======
-
             <div className="flex flex-col items-end">
                 <div className="mr-2.5 block lg:hidden cursor-pointer w-fit right-0.5 ">
                     <BurgerIcon click={handleClick} isOpen={isClicked} />
@@ -44,7 +36,6 @@ function Header() {
                     <Link className={`linkStyle ${location.pathname === "/about" ? activeLink : ""}`} to="/about">ABOUT</Link>
                     <Link className={`linkStyle ${location.pathname === "/projects" ? activeLink : ""}`} to="/projects">PROJECTS</Link>
                 </div>
->>>>>>> beta
             </div>
         </header>
     );
