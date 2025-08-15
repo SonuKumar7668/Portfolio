@@ -12,14 +12,6 @@
   @apply h-[100vh] pt-15
 }
 
-.skills-div{
-  @apply grid grid-cols-3 gap-8 pl-10 mx-[15vw]
-}
-
-.Skills-heading{
-  @apply text-4xl font-bold text-gray-900 text-center
-}
-
 .skills-desc{
   @apply text-center text-gray-700 mb-12
 }
