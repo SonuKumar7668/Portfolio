@@ -4,7 +4,7 @@ import SkillsCard from './SkillsCard';
 
 function Skill() {
     return (
-        <div className='bg-[#DCEDFF] py-30 w-[100vw] transition-all duration-300 px-2'>
+        <div className='bg-day py-30 w-[100%] transition-all duration-300'>
             <h1 className='page-heading'>Skills </h1>
             <p className="text-center text-gray-600 mx-auto mt-4 mb-12 ">
                 A blend of tools, languages, and frameworks I use to craft scalable and engaging applications.

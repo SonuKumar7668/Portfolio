@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 function AboutPage() {
   return (
-    <div className='bg-[#DCEDFF] py-30 px-5 lg:px-[10vw] min-h-[100vh]'>
+    <div className='bg-day py-30 px-5 lg:px-[10vw] min-h-[100vh]'>
       <h1 className='page-heading'>About me!</h1>
       <p className='px-5 lg:px-15 my-5 shadow-md hover:shadow-xl transition-all duration-300 p-3.5 rounded-2xl'>
         Hi, I'm Sonu Kumar — a Computer Science student passionate about building efficient, user-friendly web applications. I enjoy working with the MERN stack, exploring AI integrations, and solving real-world problems through code. My projects range from small tools to full-scale platforms, and I'm always looking for ways to improve my skills and take on new challenges.
@@ -17,7 +17,7 @@ function AboutPage() {
         </p>
         <Link
           to="/skills"
-          className="inline-flex items-center justify-center bg-indigo-600 text-white font-bold text-lg px-8 py-3 rounded-lg transition-transform duration-300 hover:bg-indigo-700 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-800"
+          className="inline-flex items-center justify-center bg-night text-white font-bold text-lg px-8 py-3 rounded-lg transition-transform duration-300 hover:bg-night hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-800"
         >
           See My Skills
 
@@ -32,7 +32,7 @@ function AboutPage() {
         </p>
         <Link
           to="/projects"
-          className="inline-flex items-center justify-center bg-indigo-600 text-white font-bold text-lg px-8 py-3 rounded-lg transition-transform duration-300 hover:bg-indigo-700 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-800"
+          className="inline-flex items-center justify-center bg-night text-white font-bold text-lg px-8 py-3 rounded-lg transition-transform duration-300 hover:bg-night hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-800"
         >
           See My Projects
 

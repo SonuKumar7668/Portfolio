@@ -2,7 +2,7 @@ export const ProjectInfo = [
 {
     title:"Protfolio",
     description: "This is my portfolio website",
-    skills:["React"],
+    skills:["React","Tailwind CSS"],
     link:"https://sonukumar1.netlify.app/",
     github:"https://github.com/SonuKumar7668/Portfolio"
 },

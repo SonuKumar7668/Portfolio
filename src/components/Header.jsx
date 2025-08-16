@@ -7,7 +7,7 @@ function Header() {
     const location = useLocation();
     const isHomePage = location.pathname === "/";
     const activeLink = "active-link";
-    const headerStyle = "flex fixed py-5 z-10 w-full justify-between lg:bg-transparent";
+    const headerStyle = "flex fixed py-5 z-10 w-full justify-between";
 
     const handleClick = () => {
         console.log("clicked at", Date.now());
@@ -15,7 +15,7 @@ function Header() {
     };
 
     return (
-        <header className={`${headerStyle} ${isHomePage ? 'bg-[#DCEDFF] md:bg-transparent' : 'bg-[#DCEDFF] shadow-md'}`}>
+        <header className={`${headerStyle} ${isHomePage ? 'bg-day md:bg-transparent' : 'bg-day shadow-md'}`}>
             <div className={isHomePage ? `lg:text-white` : `text-black`}>
                 <Link to="/">
                     <h1 className="title text-2xl mx-5">SONU KUMAR</h1>
@@ -27,7 +27,7 @@ function Header() {
                 </div>
                 <div
                     className={`mx-5 right-0 transition-all duration-300 
-                    ${isClicked ? 'flex flex-col text-2xl' : 'hidden'} 
+                    ${isClicked ? 'flex flex-col' : 'hidden'} 
                     lg:block`}
                     onClick={handleClick}
                 >

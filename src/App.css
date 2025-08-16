@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme{
+  --color-day: #EEE5E5;
+  --color-night: #37392E;
+  --color-second: #DDCECD;
+  --color-mood:#28AFB0;
+}
+
 .linkStyle{
   @apply mx-5 text-[#1C2321]
 }
