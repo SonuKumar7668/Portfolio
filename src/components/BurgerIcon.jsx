@@ -8,7 +8,7 @@ const BurgerIcon = ({ click,isOpen }) => {
         className="burger"
         htmlFor="burger"
       >
-        <input type="checkbox" id="burger" onClick={click} checked={isOpen}/>
+        <input type="checkbox" id="burger" checked={isOpen} onChange={click} />
         <span />
         <span />
         <span />

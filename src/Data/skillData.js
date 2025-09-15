@@ -1,5 +1,10 @@
 const frameworks = [
     {
+        title: "Next.js",
+        desc: "Framework I use for building server-side rendered React applications",
+        image: "./Icons/nextjs.png"
+    },
+    {
         title: "React",
         desc: "Library I use for frontend developmentLibrary I use for frontend development",
         image: "./Icons/react.png"

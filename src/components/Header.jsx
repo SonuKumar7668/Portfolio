@@ -7,10 +7,9 @@ function Header() {
     const location = useLocation();
     const isHomePage = location.pathname === "/";
     const activeLink = "active-link";
-    const headerStyle = "flex fixed py-5 z-10 w-full justify-between";
+    const headerStyle = "flex fixed py-5 z-10 w-full justify-between transition-all duration-300 ";
 
     const handleClick = () => {
-        console.log("clicked at", Date.now());
         setIsClicked(prev => !prev);
     };
 

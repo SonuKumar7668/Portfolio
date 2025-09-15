@@ -10,7 +10,10 @@ function Home() {
                     <p className='m-0 '>WEB</p>
                     <p className='m-0'>DEVELOPER</p>
                     <p className="mt-4 text-2xl text-gray-200">Learning, building, and eager to solve real-world problems.</p>
-                    <Link to="/about"><Button/></Link>
+                    <Link to="/about"> 
+                        <button class="btn btn-neutral btn-outline text-day border-day hover:text-night hover:bg-day hover:border-night">Know more!</button>
+                    </Link>
+                    {/* <Link to="/about"><Button/></Link> */}
                 </div>
             </div>
 

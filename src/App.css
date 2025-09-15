@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme{
-  --color-day: #EEE5E5;
-  --color-night: #37392E;
-  --color-second: #DDCECD;
-  --color-mood:#28AFB0;
+  --color-day: #EBE2E0;
+  --color-night: #990302;
+  --color-second: #8A95A5;
+  --color-mood:#757083;
 }
 
 .linkStyle{

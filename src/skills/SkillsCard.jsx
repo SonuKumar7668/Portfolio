@@ -1,7 +1,8 @@
 import React from 'react'
 import Card from './Card';
+// import Card2 from './Card2';
 function SkillsCard({data,title,desc}) {
-    return ( 
+    return (
         <div className='mt-10'>
         <h2 className='text-4xl font-bold text-gray-900 text-center'>{title}</h2>
         <p className="text-center text-gray-700 mb-12">{desc}</p>
@@ -9,6 +10,7 @@ function SkillsCard({data,title,desc}) {
             {data.map((d,index)=>{
                 return (
                     <Card title={d.title} desc={d.desc} img={d.image} key={index} />
+                    // <Card2 name={d.title} description={d.desc} icon={d.image} key={index} />
                 )
             })}
         </div>
